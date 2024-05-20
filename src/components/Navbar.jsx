@@ -3,10 +3,10 @@ import Logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#262626] p-4 w-[100vw]  fixed  z-10  " >
-      <div className="flex justify-between items-center">
-        <img src={Logo} alt="brand-logo" width={150} />
-        <button className="bg-[#82b440] text-white px-4 py-1 text-[14px] rounded">
+    <nav className="bg-[#262626] px-5 w-[100vw] fixed max-h-[54px]  z-20  ">
+      <div className="relative flex justify-between items-center">
+        <img src={Logo} alt="brand-logo" width={150} className="relative " />
+        <button className=" relative  bg-[#82b440] mx-[20px] my-[12px] text-white px-[16px] py-[5px] font-sora text-[14px] rounded">
           Buy now
         </button>
       </div>

@@ -10,6 +10,50 @@ body {
 
 }
 
+.stylo-scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+    display: none;
+}
+
+body.rtl .stylo-scroll-top-btn{
+    right: auto;
+    left: 20px;
+}
+
+.stylo-scroll-top-btn > i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: var(--stylo-main-color);
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 50px;
+    -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.stylo-scroll-top-btn > i > svg{
+    width: 12px;
+    fill: #fff;
+}
+
+.stylo-scroll-top-btn > i:hover {
+    opacity: 0.8;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height:1px;

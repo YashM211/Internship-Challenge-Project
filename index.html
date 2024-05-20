@@ -4,27 +4,45 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite + React</title>
 </head>
 <style>
-  #fluid {
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100dvw;
-    height: 100dvh;
-  }
+   #root{
+            position: relative;
+          }
+           
+
+            body {
+                margin: 0;
+                 font-family: "Sora", sans-serif;
+            } 
+
+            canvas {
+                width: 100vw;
+                height: 100vh;
+                position:fixed;
+                pointer-events: all;
+                inset: 0;
+          
+              
+            }
 </style>
 
 <body>
-  <canvas id="fluid"></canvas>
+  <canvas>
+  </canvas>
   <div id="root">
   </div>
+  
 
-  <script type="module" src="/src/main.jsx"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/script.js"></script>
   <!-- <script src="./script.js"></script> -->
 </body>
 
